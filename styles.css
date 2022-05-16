@@ -1,0 +1,286 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+:root {
+	--blue: #407bff;
+	--lblue: #009499;
+	--orange: #ee3726;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+span {
+	font-size: inherit;
+	font-weight: inherit;
+}
+.container {
+	padding-inline: 110px;
+	margin: 0 auto;
+	/* padding-left: 109px;
+	padding-right: 109px; */
+	max-width: 2000px;
+	width: 100%;
+}
+p {
+	font-family: 'Work Sans', sans-serif;
+	line-height: 35px;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+header {
+	padding: 32px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.name {
+	color: var(--lblue);
+	font-size: 56px;
+	font-weight: 700;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 58px;
+	font-size: 16px;
+}
+nav li {
+	cursor: pointer;
+	font-weight: 400;
+}
+nav button {
+	font-size: 16px;
+	line-height: 23px;
+	letter-spacing: -0.03em;
+}
+
+.primary {
+	background-color: var(--blue);
+	color: #fff;
+}
+.secondary {
+	background-color: var(--orange);
+	color: #fff;
+}
+button {
+	border: none;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: 600;
+	padding: 11px 33px;
+
+	font-size: 25px;
+	padding: 19px 60px;
+	line-height: 36px;
+	letter-spacing: -0.03em;
+}
+
+.hero {
+	height: 830px;
+	padding-top: 140px;
+	padding-bottom: 140px;
+	background-image: url('./images/landing.png');
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+h1 {
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 75px;
+}
+h1 span {
+	color: var(--orange);
+}
+h2 {
+	line-height: 80px;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 800;
+	color: #050402;
+	margin-bottom: 65px;
+}
+h4 {
+	font-size: 32px;
+	line-height: 44px;
+	letter-spacing: -0.01em;
+	font-weight: 700;
+	color: #1c1b1b;
+}
+.hero > div > div {
+	max-width: 761px;
+}
+.hero p {
+	margin: 16px 0 76px;
+}
+
+.about {
+	padding-top: 150px;
+	padding-bottom: 150px;
+	display: flex;
+	justify-content: space-between;
+	gap: 80px;
+}
+.about h2 {
+	margin-bottom: 40px;
+}
+.about > div {
+	flex-basis: 50%;
+}
+.about img {
+	max-width: 100%;
+	height: 729px;
+	float: right;
+}
+.about p {
+	margin-bottom: 65px;
+}
+
+.courses {
+	color: #2c2b2c;
+	background: rgba(253, 222, 163, 0.4);
+
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.c-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 71px;
+	margin-bottom: 161px;
+}
+.c-grid > div {
+	background-color: #fff;
+	padding: 53px 30px 53px;
+	display: flex;
+	flex-direction: column;
+}
+.c-grid h4 {
+	font-weight: 400;
+	margin-bottom: 24px;
+}
+.c-grid .info {
+	margin-bottom: 50px;
+}
+.c-grid .age {
+	margin-top: auto;
+	margin-bottom: 10px;
+}
+.courses button {
+	display: block;
+	margin: 0 auto;
+}
+
+.work {
+	padding: 150px 0 100px;
+}
+.work > div,
+.experience > div {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+}
+.work h4,
+.experience h4 {
+	margin-bottom: 35px;
+}
+
+.for {
+	display: flex;
+	align-items: center;
+}
+.for h2 {
+	margin: 0;
+}
+.for > div {
+	flex: 1;
+}
+.for .big {
+	color: #1c1b1b;
+	margin: 53px 0;
+	font-size: 32px;
+	line-height: 44px;
+	letter-spacing: -0.01em;
+}
+.for .imgCon {
+	flex: 0;
+	flex-basis: 540px;
+}
+.for img {
+	max-width: 100%;
+}
+
+.banner {
+	background-color: var(--lblue);
+	padding: 70px 0;
+	margin-top: 100px;
+}
+.banner .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.banner h2 {
+	font-size: 45px;
+	line-height: 61px;
+	font-weight: 400;
+	color: #fff;
+	max-width: 750px;
+	margin: 0;
+}
+
+.experience {
+	padding-top: 100px;
+	padding-bottom: 180px;
+	text-align: center;
+}
+.experience h3 {
+	text-transform: uppercase;
+	color: #6b6b6b;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 38px;
+}
+.experience h2 {
+	text-transform: none;
+	margin: 30px 0 50px;
+	font-weight: 700;
+	line-height: 68px;
+}
+.experience > div {
+	text-align: left;
+	margin-top: 110px;
+}
+
+.dark {
+	color: #fff;
+	background-color: #000;
+	padding: 120px 0;
+}
+.dark .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.dark p {
+	max-width: 400px;
+	font-size: 32px;
+	line-height: 38px;
+	margin-bottom: 80px;
+}
+.dark .container div:last-child {
+	max-width: 886px;
+}
+.dark img {
+	max-width: 100%;
+}
