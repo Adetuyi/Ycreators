@@ -75,7 +75,7 @@ nav button {
 	letter-spacing: -0.03em;
 }
 nav img {
-	width: 30px;
+	width: 20px;
 	cursor: pointer;
 }
 nav .close {
@@ -83,6 +83,7 @@ nav .close {
 }
 nav .icons {
 	display: none;
+	place-items: center;
 }
 
 .primary {
@@ -128,7 +129,7 @@ h2 {
 	line-height: 80px;
 	text-transform: uppercase;
 	font-size: var(--fh2);
-	font-weight: 800;
+	font-weight: 700;
 	color: #050402;
 	margin-bottom: 65px;
 }
@@ -140,7 +141,7 @@ h4 {
 	color: #1c1b1b;
 }
 .hero h1 {
-	max-width: 19ch;
+	max-width: 17ch;
 }
 .hero > div > div {
 	max-width: 83ch;
@@ -458,6 +459,10 @@ footer li:not(:last-child) {
 		--sectp: 150px;
 	}
 
+	header {
+		padding: 20px 0;
+	}
+
 	h1 {
 		line-height: 62px;
 	}
@@ -632,6 +637,9 @@ footer li:not(:last-child) {
 	}
 }
 @media (max-width: 970px) {
+	header {
+		padding: 10px 0;
+	}
 	nav ul {
 		display: none;
 	}
@@ -664,7 +672,7 @@ footer li:not(:last-child) {
 		padding: 0;
 	}
 	nav .icons {
-		display: block;
+		display: grid;
 	}
 
 	.hero {
@@ -768,10 +776,36 @@ footer li:not(:last-child) {
 		padding: 40px 0;
 	}
 }
+@media (max-width: 800px) {
+	:root {
+		--fh1: 28px;
+		--fp: 16px;
+		--fh2: 25px;
+		--fmid: 18px;
+		--fbig: 20px;
+		--ffaq: 20px;
+		--fdropdown: 16px;
+
+		--sectp: 50px;
+	}
+	h1 {
+		line-height: 38px;
+		font-weight: 600;
+	}
+	.experience h2 {
+		line-height: 30px;
+	}
+	.faq .footer > div:first-child {
+		line-height: 27px;
+	}
+}
 @media (max-width: 650px) {
 	.work > div,
 	.experience > div {
 		grid-template-columns: 1fr;
+	}
+	.c-grid > div {
+		padding: 40px 20px;
 	}
 }
 @media (max-width: 475px) {
