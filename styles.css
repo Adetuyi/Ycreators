@@ -738,6 +738,9 @@ footer li:not(:last-child) {
 	.faq .top {
 		flex-direction: column-reverse;
 	}
+	p {
+		line-height: 20px;
+	}
 	.faq .right {
 		min-width: unset;
 	}
@@ -787,6 +790,9 @@ footer li:not(:last-child) {
 		--fdropdown: 16px;
 
 		--sectp: 50px;
+	}
+	.hero {
+		height: 500px;
 	}
 	h1 {
 		line-height: 38px;
